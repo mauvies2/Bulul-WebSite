@@ -52,3 +52,170 @@
     </header>
   </body>
 </html>
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.top-banner {
+  width: 100vw;
+  height: 2rem;
+  background-color: #750000;
+  color: #ffffff;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.nav-bar {
+  width: 100vw;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  height: 1.6rem;
+}
+
+.nav-menu li {
+  margin-right: 4rem;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #750000;
+}
+
+.nav-menu {
+  width: 50vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav-right-menu {
+  display: flex;
+  align-items: center;
+  margin-right: 70px;
+  padding-bottom: 5px;
+}
+
+.logo {
+  width: 80px;
+  margin-left: 60px;
+}
+
+.banner {
+  width: 100vw;
+  height: calc(100vh - 2rem - 4rem);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #ffffff;
+  background: url(./img/banner.jpg) center center/cover no-repeat;
+}
+
+.banner i {
+  font-size: 40px;
+  color: rgba(29, 29, 29, 0.5);
+}
+
+.text-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 10rem;
+}
+
+.text-banner h1 {
+  font-size: 3rem;
+}
+
+.text-banner h2 {
+  padding-top: 30px;
+  font-size: 1.5rem;
+}
+
+.text-banner p {
+  text-align: center;
+  margin-top: 6rem;
+  margin-left: 3rem;
+  width: 9rem;
+  padding: 8px 0;
+  background: rgba(75, 00, 00, 0.7);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.arrow-left,
+.arrow-right {
+  width: 15vw;
+  text-align: center;
+}
+
+.nav-right-menu li input {
+  color: #750000;
+  height: 2rem;
+  padding: 4px;
+  margin-right: 0;
+}
+
+.fa-search {
+  height: 2rem;
+  width: 2rem;
+  margin-left: 0;
+  padding: 8px;
+  background: rgba(75, 00, 00, 1);
+  color: white;
+  margin-right: 60px;
+  cursor: pointer;
+}
+
+.fa-shopping-cart {
+  font-size: 1.3rem;
+  padding-top: 7px;
+  cursor: pointer;
+}
+
+.text-banner p:hover {
+  background: rgb(56, 0, 0);
+}
+
+.banner i:hover {
+  font-size: 60px;
+  color: rgba(29, 29, 29, 0.8);
+  transition: 0.1s;
+  animation: infinite reverse alternate;
+  margin-right: 15px;
+}
+
+.nav-menu li:hover {
+  border-bottom: rgba(75, 00, 00, 0.8) solid 3px;
+}
+
+.fa-search:hover {
+  background: rgba(75, 00, 00, 0.8);
+}
+/*
+.nav-right-menu li:hover {
+  font-size: 1.5rem;
+  transition: 0.3s;
+  animation: reverse infinite;
+}*/
+
+.fa-shopping-cart:hover {
+  opacity: 0.6;
+  transition: 0.3s
+  animation: reverse infinite;
+}
+

@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#ham-menu {
+  display: none;
+}
+
+.top-banner {
+  width: 100%;
+  height: 1.5rem;
+  background-color: #750000;
+  color: #ffffff;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 3px 0;
+}
+
+.nav-bar {
+  width: 100%;
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  top: 2rem;
+}
+
+li {
+  list-style: none;
+  height: 1.6rem;
+}
+
+.nav-menu li {
+  margin-right: 10%;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #750000;
+}
+
+.nav-menu {
+  width: 30vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav-right-menu {
+  display: flex;
+  /* justify-content: end; */
+  align-items: center;
+  margin-right: 1rem;
+  padding-bottom: 5px;
+}
+
+.logo {
+  width: 80px;
+  margin: 0 40px;
+}
+
+.banner {
+  width: 100%;
+  height: calc(100vh - 5rem);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #ffffff;
+  background: url(./img/banner.jpg) center/cover no-repeat fixed;
+  top: 5rem;
+}
+
+.banner i {
+  font-size: 40px;
+  color: rgba(29, 29, 29, 0.5);
+}
+
+.text-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 10rem;
+}
+
+.text-banner h1 {
+  font-size: 3rem;
+}
+
+.text-banner h2 {
+  padding-top: 30px;
+  font-size: 1.5rem;
+}
+
+.btn1 {
+  text-align: center;
+  margin-top: 6rem;
+  margin-left: 3rem;
+  width: 11rem;
+  padding: 8px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(75, 00, 00, 0.7);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.4s linear;
+}
+
+.bt1-text {
+  margin-right: 10px;
+}
+
+.arrow-left,
+.arrow-right {
+  width: 15vw;
+  text-align: center;
+}
+
+.nav-right-menu li input {
+  color: #750000;
+  height: 2rem;
+}
+
+.fa-search {
+  height: 2rem;
+  width: 3rem;
+  text-align: center;
+  margin-left: -1px;
+  padding: 8px;
+  background: rgba(75, 00, 00, 1);
+  color: white;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+#add-to-cart {
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.3rem;
+  padding-top: 12px;
+  cursor: pointer;
+}
+
+.btn1:hover {
+  background: rgb(56, 0, 0);
+  align-items: center;
+  justify-content: space-around;
+  transition: all 0.4s linear;
+}
+
+.banner i:hover {
+  font-size: 60px;
+  color: rgba(29, 29, 29, 0.8);
+  transition: 0.1s;
+  animation: infinite reverse alternate;
+  margin-right: 15px;
+}
+
+.nav-menu li:hover {
+  border-bottom: rgba(75, 00, 00, 0.8) solid 3px;
+}
+
+.fa-search:hover {
+  background: rgba(75, 00, 00, 0.8);
+}
+
+#add-to-cart:hover {
+  opacity: 0.6;
+  font-size: 1.5rem;
+  top: 22px;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.container div {
+  width: 250px;
+  height: 250px;
+  background: #fff;
+  color: #fff;
+  border: 2px #000000 solid;
+  margin: 2rem 50px;
+}
+
+.footer {
+  height: 10rem;
+  background: #750000;
+  margin-top: 3rem;
+}
+
+.best-sellers {
+  height: 4rem;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 2.5rem;
+  margin: 4rem 0rem 1rem 0rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-right-menu input {
+    display: none;
+  }
+  .nav-menu {
+    width: 70vw;
+  }
+  .fa-search {
+    height: 2rem;
+    width: 3rem;
+    font-size: 1.45rem;
+    text-align: center;
+    margin-left: -1px;
+    padding: 4px;
+    background: white;
+    color: black;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .nav-right-menu {
+    margin-right: -0.5rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .nav-menu {
+    display: none;
+  }
+  .nav-right-menu {
+    width: 30vw;
+    margin-right: 2rem;
+    justify-content: space-between;
+  }
+  #ham-menu {
+    display: block;
+    font-size: 2.5rem;
+    color: rgba(75, 00, 00, 1);
+    position: relative;
+    bottom: 15px;
+  }
+  .logo {
+    margin-left: 4rem;
+  }
+}
